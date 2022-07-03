@@ -1,9 +1,13 @@
-# Fabric Example Mod
+# Every Random Enchantment
 
-## Setup
+This mod adds new Enchantments to Minecraft:
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
+1 curses:
+- Randomness: Adds a random effect upon hit. 
+
+1 enchantment: 
+- Frost: Slows entities upon hit. 
 
 ## License
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+This template is available under the MIT license.
