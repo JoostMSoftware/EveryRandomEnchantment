@@ -11,7 +11,7 @@ import org.jetbrains.annotations.NotNull;
 
 public class RandomnessCurse extends Enchantment {
     protected RandomnessCurse() {
-        super(Rarity.COMMON, EnchantmentCategory.ARMOR, new EquipmentSlot[] {EquipmentSlot.MAINHAND});
+        super(Rarity.COMMON, EnchantmentCategory.ARMOR, new EquipmentSlot[] {EquipmentSlot.HEAD, EquipmentSlot.CHEST, EquipmentSlot.LEGS, EquipmentSlot.FEET});
     }
 
     private MobEffect RandomEffect() {
@@ -29,6 +29,4 @@ public class RandomnessCurse extends Enchantment {
         user.addEffect(new MobEffectInstance(RandomEffect(), 20 * 5 * level, level -1));
         super.doPostHurt(user, target, level);
     }
-
-
 }

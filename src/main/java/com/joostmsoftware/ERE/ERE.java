@@ -1,6 +1,6 @@
 package com.joostmsoftware.ERE;
 
-import com.joostmsoftware.ERE.enchantment.EREEnchants;
+import com.joostmsoftware.ERE.enchantment.EREEnchantments;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,6 +17,8 @@ public class ERE implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		EREEnchants.Init();
+		EREEnchantments.Init();
+
+		LOGGER.info("Everything loaded from EveryRandomEnchantment");
 	}
 }
