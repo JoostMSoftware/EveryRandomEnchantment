@@ -4,7 +4,19 @@
   "package": "com.joostmsoftware.ERE.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "LivingEntityMixin"
+    "server.level.ServerPlayerMixin",
+    "world.entity.LivingEntityMixin",
+    "world.entity.monster.BlazeMixin",
+    "world.entity.monster.EnderManMixin",
+    "world.entity.monster.EndermiteMixin",
+    "world.entity.monster.GhastMixin",
+    "world.entity.monster.HoglinMixin",
+    "world.entity.monster.MagmaCubeMixin",
+    "world.entity.monster.PiglinBruteMixin",
+    "world.entity.monster.PiglinMixin",
+    "world.entity.monster.ShulkerMixin",
+    "world.entity.monster.ZombifiedPiglinMixin",
+    "world.item.enchantment.DamageEnchantmentMixin"
   ],
   "client": [
   ],

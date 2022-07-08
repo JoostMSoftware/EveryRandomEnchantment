@@ -18,6 +18,9 @@
 
   "environment": "*",
   "entrypoints": {
+    "prelaunch": [
+      "com.joostmsoftware.ERE.EREPreLaunch"
+    ],
     "main": [
       "com.joostmsoftware.ERE.ERE"
     ]
