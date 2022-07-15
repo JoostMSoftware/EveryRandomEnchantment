@@ -19,7 +19,7 @@ public abstract class LivingEntityMixin {
     public float onModifyExpressionValue(Block instance){
         var enchants = EnchantmentHelper.getEnchantments(this.getItemBySlot(EquipmentSlot.FEET));
         if (enchants.containsKey(EREEnchantments.SOAP)) {
-            return 0.98f;
+            return 1.02f;
         } else {
             return instance.getFriction();
         }

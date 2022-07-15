@@ -18,6 +18,7 @@ public class ERE implements ModInitializer {
 		// Proceed with mild caution.
 
 		EREEnchantments.Init();
+		LootTableInjector.Init();
 
 		LOGGER.info("Everything loaded from EveryRandomEnchantment");
 	}

@@ -12,4 +12,9 @@ public class NetherDamageEnchantment extends DamageEnchantment {
     public boolean isTreasureOnly() {
         return true;
     }
+
+    @Override
+    public boolean isTradeable() {
+        return false;
+    }
 }

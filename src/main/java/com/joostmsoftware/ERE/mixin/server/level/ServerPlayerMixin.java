@@ -1,5 +1,6 @@
 package com.joostmsoftware.ERE.mixin.server.level;
 
+import com.joostmsoftware.ERE.ERE;
 import com.joostmsoftware.ERE.enchantment.EREEnchantments;
 import com.mojang.authlib.GameProfile;
 import net.minecraft.core.BlockPos;
@@ -25,21 +26,29 @@ public abstract class ServerPlayerMixin extends Player {
     }
 
     @Unique
-    private boolean hadBoots = false;
+    private boolean hasBoots = false;
 
     @Inject(method = "tick", at = @At(value = "TAIL"))
     public void inject(CallbackInfo ci) {
         var enchants = EnchantmentHelper.getEnchantments(this.getItemBySlot(EquipmentSlot.FEET));
         if (enchants.containsKey(EREEnchantments.BUNNYHOP)) {
-            if (!this.hadBoots) {
-                this.hadBoots = true;
+            if (!this.hasBoots) {
+                this.hasBoots = true;
                 this.addEffect(
                         new MobEffectInstance(MobEffects.JUMP, Integer.MAX_VALUE, enchants.get(EREEnchantments.BUNNYHOP)-1)
                 );
             }
-        } else if (this.hadBoots) {
-            this.hadBoots = false;
+        } else if (enchants.containsKey(EREEnchantments.RUN)){
+            if (!this.hasBoots) {
+                this.hasBoots = true;
+                this.addEffect(
+                        new MobEffectInstance(MobEffects.MOVEMENT_SPEED, Integer.MAX_VALUE, enchants.get(EREEnchantments.RUN)-1)
+                );
+            }
+        } else if (this.hasBoots) {
+            this.hasBoots = false;
             this.removeEffect(MobEffects.JUMP);
+            this.removeEffect(MobEffects.MOVEMENT_SPEED);
         }
     }
 }
