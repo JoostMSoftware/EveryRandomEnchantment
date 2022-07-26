@@ -7,5 +7,14 @@
   "enchantment.ere.run": "Running",
   "enchantment.ere.poisonblade": "Poison Blade",
   "enchantment.ere.hungercurse": "Curse of Hunger",
-  "enchantment.ere.soap": "Soapy Feet"
+  "enchantment.ere.soap": "Soapy Feet",
+  "enchantment.ere.frost.desc": "Applies slowness upon hit. Increases with the level.",
+  "enchantment.ere.randomness.desc": "Gives a random effect everytime a player is hit.",
+  "enchantment.ere.enddamage.desc": "Increases damage to void based mobs.",
+  "enchantment.ere.netherdamage.desc": "Increases damage to nether based mobs.",
+  "enchantment.ere.bunnyhop.desc": "Gives you the ability to jump like a rabbit.",
+  "enchantment.ere.run.desc": "Wanna be fast??",
+  "enchantment.ere.poisonblade.desc": "Applies poison upon hit. Increases with the level.",
+  "enchantment.ere.hungercurse.desc": "Gives the hunger effect upon being hit.",
+  "enchantment.ere.soap.desc": "Imagine being so soapy you're gliding over anything."
 }
