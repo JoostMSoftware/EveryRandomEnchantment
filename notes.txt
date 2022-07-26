@@ -1,2 +1,0 @@
-Poison Blade -> gives poison on hit.
-Jagged Edge -> change to do increase damage (more than a crit and is RNG)
