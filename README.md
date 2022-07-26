@@ -23,4 +23,4 @@ Hunger: Applies hunger upon hit
 [EnchantmentDescriptions](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions) - for the fun enchantment descriptions.
 
 ## License
-This mod is available under the MIT license.
+This mod is available under the MIT license. Please check the [LICENSE](https://github.com/JoostMSoftware/EveryRandomEnchantment/blob/1.19/LICENSE) file for more info!
