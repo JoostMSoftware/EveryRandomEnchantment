@@ -9,8 +9,9 @@
     "JoostMSoftware"
   ],
   "contact": {
-    "homepage": "https://joostmsoftware.com/",
-    "sources": "https://github.com/JoostMSoftware/EveryRandomEnchantment"
+    "homepage": "",
+    "sources": "https://github.com/JoostMSoftware/EveryRandomEnchantment",
+    "issues": "https://github.com/JoostMSoftware/EveryRandomEnchantment/issuse"
   },
 
   "license": "MIT",
